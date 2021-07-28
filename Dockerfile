@@ -22,15 +22,17 @@ RUN conda install -n base -c conda-forge mamba
 
 # install conda packages using mamba
 RUN mamba install -y -n base -c conda-forge -c huggingface -c pytorch -c anaconda -c fastai \
-    tensorflow \
+    tensorflow-base \
+    tensorflow-gpu \
     pytorch \
     scikit-learn \
+    jupyter \
+    jupyterlab \
     keras \
     pandas \
     numpy \
     nltk \
     gensim \
-    samtools \
     fastai \
     transformers
 
